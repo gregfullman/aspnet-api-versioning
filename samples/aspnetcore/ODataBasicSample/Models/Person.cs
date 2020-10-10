@@ -19,5 +19,7 @@
         public string Email { get; set; }
 
         public string Phone { get; set; }
+
+        public IEnumerable<Order> Orders { get; set; }
     }
 }

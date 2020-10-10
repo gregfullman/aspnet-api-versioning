@@ -20,6 +20,7 @@
             var person = builder.EntitySet<Person>( "People" ).EntityType;
 
             person.HasKey( p => p.Id );
+            person.HasMany<Order>( p => p.Orders );
 
             return person;
         }
